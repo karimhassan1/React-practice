@@ -20,7 +20,12 @@ const HeadTop = () => {
       <div className="w-full bg-primary h-12 flex justify-around items-center text-white">
         <div className="w-1/4">Need help ? call us:+01 0123 456789</div>
         <div className="w-2/5 flex justify-between">
-          <button>
+          <button
+            onClick={() => {
+              setHeadCountNum(headCountNum - 1);
+              setHeadCountArr((headCountNum - 1) % 3);
+            }}
+          >
             <FontAwesomeIcon icon={faAngleLeft} size="xl" />
           </button>
           <p>{TitleArr[headCountArr]}</p>

@@ -1,9 +1,9 @@
-import HeadTop from "./components/HeadTop";
-import HeadMiddle from "./components/HeadMiddle";
-import HeadBottom from "./components/HeadBottom";
-import FooterTop from "./components/FooterTop";
-import FooterMiddle from "./components/FooterMiddle";
-import FooterBottom from "./components/FooterBottom";
+import HeadTop from "./components/Header/HeadTop";
+import HeadMiddle from "./components/Header/HeadMiddle";
+import HeadBottom from "./components/Header/HeadBottom";
+import FooterTop from "./components/Footer/FooterTop";
+import FooterMiddle from "./components/Footer/FooterMiddle";
+import FooterBottom from "./components/Footer/FooterBottom";
 
 export const Header = () => {
   return (
