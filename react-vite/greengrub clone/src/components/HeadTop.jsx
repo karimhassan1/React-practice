@@ -13,7 +13,8 @@ let TitleArr = [
   "Use discount code GREENGRUB001 get 5% off",
 ];
 const HeadTop = () => {
-  let [headCount, setHeadCount] = useState(0);
+  let [headCountArr, setHeadCountArr] = useState(0);
+  let [headCountNum, setHeadCountNum] = useState(3);
   return (
     <>
       <div className="w-full bg-head-top h-12 flex justify-around items-center text-white">
@@ -22,11 +23,11 @@ const HeadTop = () => {
           <button>
             <FontAwesomeIcon icon={faAngleLeft} size="xl" />
           </button>
-          <p>{TitleArr[headCount]}</p>
+          <p>{TitleArr[headCountArr]}</p>
           <button
             onClick={() => {
-              putInHeadCount = 
-              setHeadCount(headCount % 3);
+              setHeadCountNum(headCountNum + 1);
+              setHeadCountArr((headCountNum + 1) % 3);
             }}
           >
             <FontAwesomeIcon icon={faAngleRight} size="xl" />
