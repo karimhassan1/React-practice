@@ -14,3 +14,34 @@
 .cs-bg-none {
   background-color: none;
 }
+:root {
+  --footer-text-color: #666666;
+}
+.footer-text-color {
+  color: var(--footer-text-color) !important;
+}
+.ul-in-footer-middle li {
+  margin-top: 22px;
+}
+.facebook-icon-background {
+  background-color: #3b5998;
+}
+.instagram-icon-background {
+  background: linear-gradient(
+    45deg,
+    #f09433,
+    #e6683c,
+    #dc2743,
+    #cc2366,
+    #bc1888
+  );
+}
+.twitter-icon-background {
+  background-color: #00aced;
+}
+.linkedin-icon-background {
+  background-color: #0a66c2;
+}
+.ul-in-footer-bottom li {
+  margin-left: 20px;
+}

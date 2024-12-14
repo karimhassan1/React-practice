@@ -10,10 +10,10 @@ const HeadMiddle = () => {
   const [searchInput, setSearchInput] = useState("");
   return (
     <div className="border h-24 flex justify-around items-center">
-      <div className="w-1/5 bg-search p-4 rounded">
+      <div className="w-1/4 p-4 rounded">
         <input
           type="text"
-          className="bg-search border-none outline-none"
+          className="bg-search border-none outline-none p-4"
           value={searchInput}
           placeholder="Search"
           onChange={(e) => {
@@ -21,7 +21,7 @@ const HeadMiddle = () => {
             console.log(e);
           }}
         />
-        <button>
+        <button className="bg-search p-4">
           <FontAwesomeIcon icon={faMagnifyingGlass} size="xl" />
         </button>
       </div>
