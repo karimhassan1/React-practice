@@ -17,7 +17,7 @@ const HeadTop = () => {
   let [headCountNum, setHeadCountNum] = useState(3);
   return (
     <>
-      <div className="w-full bg-head-top h-12 flex justify-around items-center text-white">
+      <div className="w-full bg-primary h-12 flex justify-around items-center text-white">
         <div className="w-1/4">Need help ? call us:+01 0123 456789</div>
         <div className="w-2/5 flex justify-between">
           <button>

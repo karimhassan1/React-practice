@@ -2,6 +2,15 @@
 @tailwind components;
 @tailwind utilities;
 
-.bg-head-top {
+.bg-primary {
   background-color: #519b4d;
+}
+.text-primary {
+  color: #519b4d;
+}
+.bg-search {
+  background-color: #f9f6f1;
+}
+.cs-bg-none {
+  background-color: none;
 }
