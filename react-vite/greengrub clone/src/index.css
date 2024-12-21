@@ -1,12 +1,21 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
+* {
+  padding: 0px;
+  margin: 0px;
+}
+.rounded-100-percent {
+  border-radius: 100%;
+}
 .bg-primary {
   background-color: #519b4d;
 }
 .text-primary {
   color: #519b4d;
+}
+.bg-secondary {
+  background-color: var(--footer-text-color);
 }
 .bg-search {
   background-color: #f9f6f1;
@@ -44,4 +53,52 @@
 }
 .ul-in-footer-bottom li {
   margin-left: 20px;
+}
+.courousal-img-div-height {
+  height: 650px;
+}
+/* home body styling start espically the HalfcontentPic */
+.h-500-px {
+  height: 800px;
+}
+.h-550-px {
+  height: 550px;
+}
+.home-video-h {
+  height: 600px;
+}
+/* div size of the images with text in the home file */
+.w-650-px {
+  width: 650px;
+}
+.w-250-px {
+  width: 250px;
+}
+/* Animation of the courousal element */
+.courousal-animation-start {
+  animation-name: courousalStart;
+  animation-duration: 2s;
+}
+.courousal-animation-end {
+  animation-name: courousalEnd;
+  animation-duration: 3s;
+  animation-delay: 2s;
+}
+
+@keyframes courousalStart {
+  from {
+    margin-left: 1800px;
+  }
+  to {
+    margin-left: 0px;
+  }
+}
+
+@keyframes courousalEnd {
+  from {
+    margin-left: 0px;
+  }
+  to {
+    margin-left: -1800px;
+  }
 }

@@ -4,6 +4,7 @@ import HeadBottom from "./components/Header/HeadBottom";
 import FooterTop from "./components/Footer/FooterTop";
 import FooterMiddle from "./components/Footer/FooterMiddle";
 import FooterBottom from "./components/Footer/FooterBottom";
+import HomeBody from "./components/Body/Home/HomeBody";
 
 export const Header = () => {
   return (
@@ -11,6 +12,13 @@ export const Header = () => {
       <HeadTop />
       <HeadMiddle />
       <HeadBottom />
+    </>
+  );
+};
+export const HomeBodyApp = () => {
+  return (
+    <>
+      <HomeBody />
     </>
   );
 };
@@ -23,4 +31,3 @@ export const Footer = () => {
     </>
   );
 };
-export default Header;
