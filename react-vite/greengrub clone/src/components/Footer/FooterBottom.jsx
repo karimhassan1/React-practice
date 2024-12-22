@@ -6,15 +6,15 @@ import {
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 const FooterBottom = () => {
   return (
-    <div className="h-28 border-t-2">
-      <ul className="flex m-auto w-2/3 ul-in-footer-bottom footer-text-color mt-4">
-        <li>About Us </li>
-        <li>Contact</li>
-        <li>Faq</li>
-        <li>Privacy Policy</li>
-        <li>Shipping Policy</li>
-        <li>Term & condition</li>
-        <li>Return & Recharge</li>
+    <div className="w-full h-28 border-t-2">
+      <ul className="flex flex-row flex-wrap lg:flex-row m-auto w-full lg:w-2/3 ul-in-footer-bottom footer-text-color mt-4">
+        <li className="w-2/5">About Us </li>
+        <li className="w-2/5">Contact</li>
+        <li className="w-2/5">Faq</li>
+        <li className="w-2/5">Privacy Policy</li>
+        <li className="w-2/5">Shipping Policy</li>
+        <li className="w-2/5">Term & condition</li>
+        <li className="w-2/5">Return & Recharge</li>
       </ul>
       <div className="flex justify-end">
         <FontAwesomeIcon
