@@ -87,6 +87,12 @@ export const smallDivHavingPicDescriptiondata2 = {
   heading: "SHOP BY CATEGORIES",
   description: "Today's New Honest Products Available Now",
 };
+export const smallDivHavingPicDescriptiondata3 = {
+  imgPath:
+    "//greengrub-theme.myshopify.com/cdn/shop/files/L01-seperator.png?v=1701928723",
+  heading: "Fresh Proucts",
+  description: "Choose Nutritious For A New Healthy Lifestyle",
+};
 
 // data of the productShowGallery in the homepage
 
@@ -139,3 +145,84 @@ export const twoImagesTextData = [
     button: "Shop Now",
   },
 ];
+export const ProductListSmallPicCourousalData = [
+  {
+    imgPath:
+      "https://greengrub-theme.myshopify.com/cdn/shop/files/product-08.webp?v=1701858446&width=360",
+    name: "Pop Corn With Teste Bomb",
+    actualPrice: "$ 29.00",
+    discountPrice: "$ 25.00",
+    num: 0,
+  },
+  {
+    imgPath:
+      "https://greengrub-theme.myshopify.com/cdn/shop/files/product-06.webp?v=1701858337&width=360",
+    name: "Saffola Honey Gold",
+    actualPrice: "$ 35.00",
+    discountPrice: "$ 29.00",
+    num: 0,
+  },
+  {
+    imgPath:
+      "https://greengrub-theme.myshopify.com/cdn/shop/files/product-04.webp?v=1701858446&width=360",
+    name: "So Good Almond",
+    actualPrice: "$ 49.00",
+    discountPrice: "$ 46.00",
+    num: 0,
+  },
+  {
+    imgPath:
+      "https://greengrub-theme.myshopify.com/cdn/shop/files/product-03.webp?v=1701858446&width=360",
+    name: "Peanut Butter",
+    actualPrice: "$ 50.00",
+    discountPrice: "$ 45.00",
+    num: 0,
+  },
+  {
+    imgPath:
+      "https://greengrub-theme.myshopify.com/cdn/shop/files/product-08.webp?v=1701858446&width=360",
+    name: "Cheese Burst",
+    actualPrice: "$ 50.00",
+    discountPrice: "$ 29.00",
+    num: 1,
+  },
+  {
+    imgPath:
+      "https://greengrub-theme.myshopify.com/cdn/shop/files/product-10.webp?v=1701858545&width=360",
+    name: "Master Chef",
+    actualPrice: "$ 100.00",
+    discountPrice: "$ 85.00",
+    num: 1,
+  },
+  {
+    imgPath:
+      "https://greengrub-theme.myshopify.com/cdn/shop/files/product-20.webp?v=1701859153&width=360",
+    name: "Rice Dosa",
+    actualPrice: "$ 50.00",
+    discountPrice: "$ 29.00",
+    num: 1,
+  },
+  {
+    imgPath:
+      "https://greengrub-theme.myshopify.com/cdn/shop/files/product-19.webp?v=1701859098&width=360",
+    name: "Bingo",
+    actualPrice: "$ 100.00",
+    discountPrice: "$ 85.00",
+    num: 1,
+  },
+];
+export const specialOfferData = {
+  bgImgPath:
+    "https://greengrub-theme.myshopify.com/cdn/shop/files/L01-offer_19079c23-381d-4fed-bb71-832fbe9b370a.webp?v=1706683175&width=1100",
+  smallDivHavingPicDes: {
+    imgPath:
+      "https://greengrub-theme.myshopify.com/cdn/shop/files/L01-seperator.png?v=1701928723",
+    heading: "Special Offer",
+    description: "Special Deal Of This Weak Get Save 40% OFF",
+  },
+  days: "13",
+  hours: "20",
+  minutes: "19",
+  seconds: "60",
+  button: "SHOP NOW",
+};

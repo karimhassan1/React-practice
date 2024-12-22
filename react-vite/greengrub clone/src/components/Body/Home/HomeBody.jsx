@@ -6,6 +6,9 @@ import {
   productShowGalleryData,
   smallDivHavingPicDescriptiondata2,
   twoImagesTextData,
+  ProductListSmallPicCourousalData,
+  specialOfferData,
+  smallDivHavingPicDescriptiondata3,
 } from "../../constant/HomeData";
 import Courousal from "../../Share/Courousal";
 import HalfcontentPic from "./HalfContentPic";
@@ -14,6 +17,8 @@ import FullVideo from "../../Share/FullVideo";
 import SmallDivHavingPicDescription from "../../Share/SmallDivHavingPicDescription";
 import ProductShowGallery from "./ProductShowGallery";
 import TwoImagesText from "./TwoImagesText";
+import ProductListSmallPicCourousal from "./ProductListSmallPicCourousal";
+import SpecialOffer from "./SpecialOffer";
 
 // the below code use the general courousal body structure and then return the courousal here
 // and this is the part of the home courousal
@@ -42,6 +47,9 @@ const HomeBody = () => {
       <ProductShowGallery data={productShowGalleryData} />
       <TwoImagesText data={twoImagesTextData} />
       <SmallDivHavingPicDescription {...smallDivHavingPicDescriptiondata2} />
+      <ProductListSmallPicCourousal data={ProductListSmallPicCourousalData} />
+      <SpecialOffer {...specialOfferData} />
+      <SmallDivHavingPicDescription {...smallDivHavingPicDescriptiondata3} />
     </>
   );
 };

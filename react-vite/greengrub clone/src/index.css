@@ -93,6 +93,10 @@
     margin-left: 0px;
   }
 }
+/* ProductListSmallPicCourousla the code is below */
+.h-499-px {
+  height: 500px;
+}
 
 @keyframes courousalEnd {
   from {
