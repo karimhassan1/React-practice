@@ -28,7 +28,7 @@ const SpecialOffer = (data) => {
             {sec} Sec
           </b>
         </div>
-        <button className="mt-24 border bg-primary mb-5 p-1 lg:p-5 text-xs text-white rounded-xl">
+        <button className="mt-4 md:mt-24 border bg-primary mb-5 p-1 lg:p-5 text-xs text-white rounded-xl">
           {data.button}
         </button>
       </div>

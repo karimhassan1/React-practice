@@ -1,6 +1,6 @@
 const FreshProductListChild = (data) => {
   return (
-    <div className="flex border w-1/5 h-72 ms-4 bg-search">
+    <div className="flex mt-4 mb-4 border lg:w-1/5 md:h-72 ms-4 bg-search">
       <div>
         <img src={data.imgPath} alt="" className="h-full" />
       </div>

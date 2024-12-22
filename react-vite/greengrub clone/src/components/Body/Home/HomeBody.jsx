@@ -39,7 +39,7 @@ const HomeBody = () => {
       <ProductShowGallery data={productShowGalleryData} />
       <TwoImagesText data={twoImagesTextData} />
       <SmallDivHavingPicDescription {...smallDivHavingPicDescriptiondata2} />
-      {/* <ProductListSmallPicCourousal data={ProductListSmallPicCourousalData} /> */}
+      <ProductListSmallPicCourousal data={ProductListSmallPicCourousalData} />
       <SpecialOffer {...specialOfferData} />
       <SmallDivHavingPicDescription {...smallDivHavingPicDescriptiondata3} />
       <Buttons data={threeHomeButtons} />
