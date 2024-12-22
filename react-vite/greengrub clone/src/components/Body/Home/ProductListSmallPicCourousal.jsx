@@ -9,16 +9,16 @@ const SmallPicCourousalChild = (childData) => {
     console.log(num);
   }, 4000);
   return showProductItems === childData.num ? (
-    <div className="border w-1/5 rounded-2xl bg-search m-8">
-      <img src={childData.imgPath} alt="" className="w-full" />
-      <h1>{childData.name}</h1>
-      <div>
+    <div className="border lg:w-1/5 w-2/5 rounded-2xl bg-search lg:m-8 mb-3">
+      <img src={childData.imgPath} alt="" className="w-full rounded-2xl" />
+      <h1 className="text-center">{childData.name}</h1>
+      <div className="flex flex-col justify-center items-center">
         <del>{childData.actualPrice}</del>
         <b className="ms-4">{childData.discountPrice}</b>
       </div>
     </div>
   ) : (
-    ""
+    <></>
   );
 };
 
@@ -26,7 +26,7 @@ const ProductListSmallPicCourousal = (ParentData) => {
   const { data } = ParentData;
 
   return (
-    <div className="h-auto border flex flex-wrap">
+    <div className="h-auto border flex flex-wrap justify-around items-center">
       {data.map((list, index) => {
         return <SmallPicCourousalChild {...list} key={index} />;
       })}
