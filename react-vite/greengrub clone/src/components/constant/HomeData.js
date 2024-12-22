@@ -93,6 +93,12 @@ export const smallDivHavingPicDescriptiondata3 = {
   heading: "Fresh Proucts",
   description: "Choose Nutritious For A New Healthy Lifestyle",
 };
+export const smallDivHavingPicDescriptiondata4 = {
+  imgPath:
+    "//greengrub-theme.myshopify.com/cdn/shop/files/L01-seperator.png?v=1701928723",
+  heading: "Latest News",
+  description: "Recently Blog Posts",
+};
 
 // data of the productShowGallery in the homepage
 
@@ -226,3 +232,35 @@ export const specialOfferData = {
   seconds: "60",
   button: "SHOP NOW",
 };
+export const threeHomeButtons = ["Vegetables", "Fruits", "Juice"];
+export const recentBlogPostData = [
+  {
+    imgPath:
+      "https://greengrub-theme.myshopify.com/cdn/shop/articles/blog-01.webp?v=1701857671&width=720",
+    date: "Dec , 26 , 2024",
+    heading: "Unlock Success With Green Grub",
+    description: "Dive into the world of the green grub glocery",
+  },
+  {
+    imgPath:
+      "https://greengrub-theme.myshopify.com/cdn/shop/articles/blog-02.webp?v=1701857671&width=720",
+    date: "Dec , 26 , 2024",
+    heading: "Unlock Success With Green Grub",
+    description: "Dive into the world of the green grub glocery",
+  },
+  {
+    imgPath:
+      "https://greengrub-theme.myshopify.com/cdn/shop/articles/blog-03.webp?v=1701857671&width=720",
+    date: "Dec , 26 , 2024",
+    heading: "Unlock Success With Green Grub",
+    description: "Dive into the world of the green grub glocery",
+  },
+];
+export const brandIconData = [
+  "https://greengrub-theme.myshopify.com/cdn/shop/files/brand-01.png?v=1701933640&width=1000",
+  "https://greengrub-theme.myshopify.com/cdn/shop/files/brand-02.png?v=1701933640&width=1000",
+  "https://greengrub-theme.myshopify.com/cdn/shop/files/brand-03.png?v=1701933640&width=1000",
+  "https://greengrub-theme.myshopify.com/cdn/shop/files/brand-04.png?v=1701933640&width=1000",
+  "https://greengrub-theme.myshopify.com/cdn/shop/files/brand-05.png?v=1701933640&width=1000",
+  "https://greengrub-theme.myshopify.com/cdn/shop/files/brand-06.png?v=1701933640&width=1000",
+];

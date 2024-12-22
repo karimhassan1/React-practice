@@ -3,7 +3,7 @@ import { faAngleDown } from "@fortawesome/free-solid-svg-icons";
 import { Link } from "react-router-dom";
 const HeadBottom = () => {
   return (
-    <div className="border-b-4 h-16 font-bold text-1xl">
+    <div className="border-b-4 h-16 font-bold text-1xl hidden lg:block">
       <ul className="flex items-center justify-around h-full w-1/3 m-auto">
         <li>
           <Link to={"/"}>Home</Link> <FontAwesomeIcon icon={faAngleDown} />

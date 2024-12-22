@@ -34,21 +34,29 @@ const Courousal = (dataparent) => {
         }}
       >
         <div
-          className={"w-2/3 h-full flex items-center justify-center flex-col "}
+          className={
+            "w-full lg:w-2/3 h-full flex items-center justify-center flex-col bg-white bg-opacity-50 lg:bg-opacity-0 "
+          }
         >
-          <p className="text-primary w-4/5 text-2xl mt-14">{data.topContent}</p>
-          <p className="font-bold w-4/5 text-5xl mt-8">{data.headContent}</p>
+          <p className="text-primary w-4/5 text-sm lg:text-2xl mt-14">
+            {data.topContent}
+          </p>
+          <p className="font-bold w-4/5 text-xl lg:text-5xl mt-8">
+            {data.headContent}
+          </p>
           <div className="w-4/5 pt-4">
-            <p className="text-3xl">
+            <p className="text-xl lg:text-3xl">
               FLAT :{" "}
-              <b className="text-primary text-4xl">{data.saleContent} </b>
+              <b className="text-primary text-xl lg:text-4xl">
+                {data.saleContent}{" "}
+              </b>
             </p>
           </div>
           <div className="w-4/5 flex mt-5  text-white">
-            <button className="border bg-primary text-xl p-4 rounded-xl ">
+            <button className="border bg-primary text-sm lg:text-xl p-4 rounded-xl ">
               {data.buttonLeft}
             </button>
-            <button className="ms-10 bg-black p-4 rounded-xl">
+            <button className="ms-10 bg-black text-sm lg:text-xl p-1 rounded-xl">
               {data.buttonRight}
             </button>
           </div>

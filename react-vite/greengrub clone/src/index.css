@@ -67,6 +67,9 @@
 .home-video-h {
   height: 600px;
 }
+.h-600-px {
+  height: 600px;
+}
 /* div size of the images with text in the home file */
 .w-650-px {
   width: 650px;

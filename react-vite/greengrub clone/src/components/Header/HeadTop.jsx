@@ -17,9 +17,11 @@ const HeadTop = () => {
   let [headCountNum, setHeadCountNum] = useState(3);
   return (
     <>
-      <div className="w-full bg-primary h-12 flex justify-around items-center text-white">
-        <div className="w-1/4">Need help ? call us:+01 0123 456789</div>
-        <div className="w-2/5 flex justify-between">
+      <div className="w-full bg-primary h-12 flex justify-center items-center text-white">
+        <div className="hidden sm:hidden lg:w-1/4 lg:block">
+          Need help ? call us:+01 0123 456789
+        </div>
+        <div className="w-full text-sm lg:text-xl sm:w-full lg:w-2/5  flex justify-between">
           <button
             onClick={() => {
               setHeadCountNum(headCountNum - 1);
@@ -38,7 +40,7 @@ const HeadTop = () => {
             <FontAwesomeIcon icon={faAngleRight} size="xl" />
           </button>
         </div>
-        <div className="w-1/5 flex justify-around">
+        <div className="hidden sm:hidden lg:w-1/5 lg:flex justify-around">
           <div className="">
             Austria <FontAwesomeIcon icon={faAngleDown} />
           </div>

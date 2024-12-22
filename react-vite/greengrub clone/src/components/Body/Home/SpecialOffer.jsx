@@ -10,7 +10,7 @@ const SpecialOffer = (data) => {
     min <= 0 ? setMin(60) : setMin(min - 1);
   }, 60000);
   return (
-    <div className="h-500-px border relative">
+    <div className="h-600-px border relative">
       <img src={data.bgImgPath} alt="" className="w-full h-full" />
       <div className="absolute top-0 flex justify-center items-center h-3/4 flex-col w-1/2">
         <SmallDivHavingPicDescription {...data.smallDivHavingPicDes} />
