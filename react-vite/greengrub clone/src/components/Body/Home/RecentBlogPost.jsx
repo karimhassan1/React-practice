@@ -2,7 +2,7 @@ import { faCalendarDay } from "@fortawesome/free-solid-svg-icons/faCalendarDay";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 const RecentBlogPostChild = (data) => {
   return (
-    <div className="border w-full flex h-auto lg:h-96 lg:flex-col justify-center lg:w-1/4 rounded-xl me-10 mb-5 mt-5">
+    <div className="border w-full flex h-auto lg:h-auto lg:flex-col justify-center lg:w-1/4 rounded-xl me-10 mb-5 mt-5">
       <div className="flex w-1/2 lg:w-full">
         <img
           src={data.imgPath}

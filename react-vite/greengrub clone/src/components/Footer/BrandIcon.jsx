@@ -2,7 +2,7 @@ const BrandIconChild = (childData) => {
   const { imgPath } = childData;
   console.log(imgPath);
   return (
-    <div className="me-8 w-36">
+    <div className="me-8 w-1/5">
       <img src={imgPath} alt="" />
     </div>
   );
