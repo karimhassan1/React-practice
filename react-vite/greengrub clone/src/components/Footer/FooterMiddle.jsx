@@ -16,13 +16,15 @@ const FooterMiddle = () => {
           <div className="hidden lg:flex items-center">
             <FontAwesomeIcon icon={faHeadphones} className="text-4xl" />
           </div>
-          <div className="hidden ms-4">
+          <div className="hidden lg:block ms-4">
             <h1 className="text-xl">Hotline Free 24/7</h1>
             <h1 className="font-bold text-xl text-black">+92 34775884</h1>
           </div>
         </div>
-        <h1 className="hidden mb-4">ADDRESS : 1010 White Street block , USA</h1>
-        <h1 className="hidden">Email : Admin@gmail.com</h1>
+        <h1 className="hidden lg:block mb-4">
+          ADDRESS : 1010 White Street block , USA
+        </h1>
+        <h1 className="hidden lg:block">Email : Admin@gmail.com</h1>
       </div>
       {/* the second block of the middle footer start */}
       <div className="w-1/5">
@@ -40,7 +42,7 @@ const FooterMiddle = () => {
       {/* start block 3 of the footer middle */}
       <div className="w-1/5">
         <h1 className="font-bold">Customer Service</h1>
-        <ul className="hidden lg:flex footer-text-color ul-in-footer-middle">
+        <ul className="hidden lg:flex lg:flex-col footer-text-color ul-in-footer-middle">
           <li>About us</li>
           <li>Contact</li>
           <li>Faq</li>
@@ -52,7 +54,7 @@ const FooterMiddle = () => {
       </div>
       <div className="w-1/5">
         <h1 className="font-bold">Follow Us</h1>
-        <div className="hidden flex-col lg:flex-row  text-white justify-around">
+        <div className="hidden lg:flex flex-col lg:flex-row  text-white justify-around">
           <div className="facebook-icon-background ps-4 pe-4 pt-3 pb-3 p rounded-lg">
             <FontAwesomeIcon icon={faFacebookF} size="xl" />
           </div>
