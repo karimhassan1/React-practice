@@ -10,7 +10,7 @@ const BrandIconChild = (childData) => {
 const BrandIcon = (parentData) => {
   const { data } = parentData;
   return (
-    <div className="h-44 border flex justify-center items-center">
+    <div className="h-44 w-full border flex justify-center items-center">
       {data.map((list, index) => {
         return <BrandIconChild imgPath={list} key={index} />;
       })}

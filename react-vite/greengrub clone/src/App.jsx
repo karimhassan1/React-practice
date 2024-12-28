@@ -9,7 +9,7 @@ import BrandIcon from "./components/Footer/BrandIcon";
 import { brandIconData } from "./components/constant/HomeData";
 export const Header = () => {
   return (
-    <div className="w-full max-w-7xl">
+    <div className="w-full max-w-[1850px]">
       <HeadTop />
       <HeadMiddle />
       <HeadBottom />
@@ -18,14 +18,14 @@ export const Header = () => {
 };
 export const HomeBodyApp = () => {
   return (
-    <div className="w-full max-w-7xl">
+    <div className="w-full max-w-[1850px]">
       <HomeBody />
     </div>
   );
 };
 export const Footer = () => {
   return (
-    <div className="max-w-7xl">
+    <div className="">
       <BrandIcon data={brandIconData} />
       <FooterTop />
       <FooterMiddle />

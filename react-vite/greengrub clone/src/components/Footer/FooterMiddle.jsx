@@ -8,7 +8,7 @@ import {
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 const FooterMiddle = () => {
   return (
-    <div className="lg:h-96 flex flex-col lg:flex-row justify-around lg:mt-14">
+    <div className="lg:h-96 w-full flex flex-col lg:flex-row justify-around lg:mt-14">
       {/* first block of the middle footer start */}
       <div className="w-1/5  footer-text-color">
         <h1 className="font-bold text-xl lg:mb-8 text-black">Contact Info</h1>
