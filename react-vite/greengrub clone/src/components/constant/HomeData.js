@@ -264,3 +264,19 @@ export const brandIconData = [
   "https://greengrub-theme.myshopify.com/cdn/shop/files/brand-05.png?v=1701933640&width=1000",
   "https://greengrub-theme.myshopify.com/cdn/shop/files/brand-06.png?v=1701933640&width=1000",
 ];
+export const HomeDropDownData = [
+  "Home 1-Super Market",
+  "Home 1-Food Market",
+  "Home 1-Organic Food",
+  "Home 1-Healthy Food",
+  "Home 1-Vegetable",
+  "Home 1-Fresh Foods",
+  "Home 1-Prepared Food",
+  "Home 1-Speciality Food",
+  "Home 1-Natural Food",
+  "Home 1-Frozen Food",
+  "Home 1-Meat Department",
+  "Home 1-sea Department",
+  "Home 1-Brak Fast Food",
+  "Home 1-Coming Soon...",
+];

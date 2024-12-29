@@ -1,6 +1,8 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faAngleDown } from "@fortawesome/free-solid-svg-icons";
 import { Link } from "react-router-dom";
+import { HomeDropDownData } from "../constant/HomeData";
+import DropDown from "../Share/DropDown";
 const HeadBottom = () => {
   return (
     <div className="border-b-4 h-16 font-bold text-1xl hidden lg:block">
@@ -16,38 +18,8 @@ const HeadBottom = () => {
             }}
           >
             Home <FontAwesomeIcon icon={faAngleDown} />
-            <div
-              id="homeDropDown"
-              className="absolute top-10  border bg-white w-52 hidden"
-            >
-              <ul>
-                <Link>
-                  <li className="border-b-2 p-2">Home 1-Super Market</li>{" "}
-                </Link>
-                <Link>
-                  <li className="border-b-2 p-2">Home 2 </li>
-                </Link>
-                <Link>
-                  <li className="border-b-2 p-2">Home 3-</li>
-                </Link>
-                <Link>
-                  <li className="border-b-2 p-2">Home 4-</li>
-                </Link>
-                <Link>
-                  <li className="border-b-2 p-2">Home 5-</li>
-                </Link>
-                <Link>
-                  <li className="border-b-2 p-2">Home 6-</li>
-                </Link>
-                <Link>
-                  <li className="border-b-2 p-2">Home 7-</li>
-                </Link>
-                <Link>
-                  <li className="border-b-2 p-2">Home 8-</li>
-                </Link>
-              </ul>
-            </div>
           </Link>
+          <DropDown data={HomeDropDownData} />
         </li>
         <li>
           <Link to={"/product"}>
@@ -69,4 +41,5 @@ const HeadBottom = () => {
     </div>
   );
 };
+
 export default HeadBottom;
