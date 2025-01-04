@@ -2,14 +2,10 @@ import { useState, useEffect } from "react";
 const Courousal = (dataparent) => {
   const { data, dataLength } = { ...dataparent };
   let [animationNum, setAnimatioinNum] = useState(dataLength);
-  useEffect(() => {
-    console.log("check the rendering");
-    setTimeout(() => {
-      setAnimatioinNum(animationNum + 1);
-    }, 5000),
-      [];
-  });
 
+  setTimeout(() => {
+    setAnimatioinNum(animationNum + 1);
+  }, 4000);
   return animationNum % dataLength == data.divKey ? (
     <div
       className="w-full h-full"

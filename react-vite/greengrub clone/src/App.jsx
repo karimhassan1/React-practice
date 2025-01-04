@@ -4,7 +4,7 @@ import HeadBottom from "./components/Header/HeadBottom";
 import FooterTop from "./components/Footer/FooterTop";
 import FooterMiddle from "./components/Footer/FooterMiddle";
 import FooterBottom from "./components/Footer/FooterBottom";
-import HomeBody from "./components/Body/Home/HomeBody";
+import HomeBody from "./components/Body/HomeBody";
 import BrandIcon from "./components/Footer/BrandIcon";
 import { brandIconData } from "./components/constant/HomeData";
 export const Header = () => {

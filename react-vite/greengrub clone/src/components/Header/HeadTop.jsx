@@ -14,7 +14,7 @@ let TitleArr = [
 ];
 const HeadTop = () => {
   let [headCountArr, setHeadCountArr] = useState(0);
-  let [headCountNum, setHeadCountNum] = useState(3);
+  let [headCountNum, setHeadCountNum] = useState(3000);
   return (
     <>
       <div className="w-full bg-primary h-12 flex justify-center items-center text-white">

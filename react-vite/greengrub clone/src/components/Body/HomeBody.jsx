@@ -11,19 +11,19 @@ import {
   threeHomeButtons,
   smallDivHavingPicDescriptiondata4,
   recentBlogPostData,
-} from "../../constant/HomeData";
-import HalfcontentPic from "./HalfContentPic";
-import TopPicBelowContentMain from "./topPicBelowContent";
-import FullVideo from "../../Share/FullVideo";
-import SmallDivHavingPicDescription from "../../Share/SmallDivHavingPicDescription";
-import ProductShowGallery from "./ProductShowGallery";
-import TwoImagesText from "./TwoImagesText";
-import ProductListSmallPicCourousal from "./ProductListSmallPicCourousal";
-import SpecialOffer from "./SpecialOffer";
-import Buttons from "../../Share/Buttons";
-import FreshProductList from "./FreshProductHoizantal";
-import RecentBlogPost from "./RecentBlogPost";
-import HomeCourousal from "./HomeCourousal";
+} from "../constant/HomeData";
+import HalfcontentPic from "./Home/HalfContentPic";
+import TopPicBelowContentMain from "./Home/topPicBelowContent";
+import FullVideo from "../Share/FullVideo";
+import SmallDivHavingPicDescription from "../Share/SmallDivHavingPicDescription";
+import ProductShowGallery from "./Home/ProductShowGallery";
+import TwoImagesText from "./Home/TwoImagesText";
+import ProductListSmallPicCourousal from "./Home/ProductListSmallPicCourousal";
+import SpecialOffer from "./Home/SpecialOffer";
+import Buttons from "../Share/Buttons";
+import FreshProductList from "./Home/FreshProductHoizantal";
+import RecentBlogPost from "./Home/RecentBlogPost";
+import HomeCourousal from "./Home/HomeCourousal";
 
 // the below code use the general courousal body structure and then return the courousal here
 // and this is the part of the home courousa

@@ -2,11 +2,9 @@ import { useState } from "react";
 const SmallPicCourousalChild = (childData) => {
   const [showProductItems, setShowProductItems] = useState(0);
   const [num, setNum] = useState(2);
-  // console.log(num);
   setTimeout(() => {
     setNum(num + 1);
     setShowProductItems(num % 2);
-    console.log(num);
   }, 4000);
   return showProductItems === childData.num ? (
     <div className="border lg:w-1/5 w-2/5 rounded-2xl bg-search lg:m-8 mb-3">
