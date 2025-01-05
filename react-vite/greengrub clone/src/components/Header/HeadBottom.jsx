@@ -6,95 +6,62 @@ import {
   BlogDropDownData,
   pagesDropDownData,
 } from "../constant/HomeData";
+
 import MegaMenu from "../Share/megaMenu";
 import DropDown from "../Share/DropDown";
 import { useState } from "react";
+const NavItem = ({ navItemText, data1, dropDownOrMega }) => {
+  const [show, isShow] = useState(false);
+  return (
+    <li
+      className=""
+      onMouseEnter={() => {
+        isShow(true);
+      }}
+      onMouseLeave={() => {
+        isShow(false);
+      }}
+    >
+      <Link to={"/"}>
+        {navItemText} <FontAwesomeIcon icon={faAngleDown} />
+      </Link>
+
+      {dropDownOrMega ? (
+        show ? (
+          <DropDown data={data1} id="homeDropDown" />
+        ) : null
+      ) : show ? (
+        <MegaMenu />
+      ) : null}
+    </li>
+  );
+};
 const HeadBottom = () => {
-  const [homeShow, setHomeShow] = useState(false);
-  const [productShow, setProductShow] = useState(false);
-  const [collectionShow, setCollectionShow] = useState(false);
-  const [pageShow, setPageShow] = useState(false);
-  const [blogShow, setBlogShow] = useState(false);
   return (
     <div className="border-b-4 h-16 font-bold text-1xl hidden lg:block text-fo relative">
       <ul className="flex items-center justify-around h-full w-2/5 m-auto">
-        <li
-          className="relative"
-          onMouseEnter={() => {
-            setHomeShow(true);
-          }}
-          onMouseLeave={() => {
-            setHomeShow(false);
-          }}
-        >
-          <Link to={"/"}>
-            Home <FontAwesomeIcon icon={faAngleDown} />
-          </Link>
-          {homeShow ? (
-            <DropDown data={HomeDropDownData} id="homeDropDown" />
-          ) : null}
-        </li>
-        <li
-          onMouseEnter={() => {
-            setProductShow(true);
-          }}
-          onMouseLeave={() => {
-            setProductShow(false);
-          }}
-        >
-          <Link>
-            Product <FontAwesomeIcon icon={faAngleDown} />
-          </Link>
-          {productShow ? <MegaMenu id="megaMenuProduct" /> : null}
-        </li>
-        <li
-          onMouseEnter={() => {
-            setCollectionShow(true);
-          }}
-          onMouseLeave={() => {
-            setCollectionShow(false);
-          }}
-        >
-          <Link to={"/collection"}>
-            Collection <FontAwesomeIcon icon={faAngleDown} />{" "}
-          </Link>
-          {collectionShow ? <MegaMenu id="megaMenuCollection" /> : null}
-        </li>
-        <li
-          className="relative"
-          onMouseEnter={() => {
-            setBlogShow(true);
-          }}
-          onMouseLeave={() => {
-            setBlogShow(false);
-          }}
-        >
-          <Link>
-            Blogs <FontAwesomeIcon icon={faAngleDown} />
-          </Link>
-          {blogShow ? (
-            <DropDown data={BlogDropDownData} id="blogDropDown" />
-          ) : null}
-        </li>
-        <li
-          className="relative"
-          onMouseEnter={() => {
-            setPageShow(true);
-          }}
-          onMouseLeave={() => {
-            setPageShow(false);
-          }}
-        >
-          <Link>
-            Pages <FontAwesomeIcon icon={faAngleDown} />
-          </Link>
-          {pageShow ? (
-            <DropDown data={pagesDropDownData} id="pagesDropDown" />
-          ) : null}
-        </li>
-        <li>
-          <Link to={"/Github"}>GitHub</Link>
-        </li>
+        <NavItem
+          navItemText={"Home"}
+          data1={HomeDropDownData}
+          dropDownOrMega={true}
+        />
+        <NavItem navItemText={"Product"} dropDownOrMega={false} />
+        <NavItem navItemText={"Collection"} dropDownOrMega={false} />
+        <NavItem
+          navItemText={"Blog"}
+          data1={BlogDropDownData}
+          dropDownOrMega={true}
+        />
+        <NavItem
+          navItemText={"Pages"}
+          data1={pagesDropDownData}
+          dropDownOrMega={true}
+        />
+        {
+          <li>
+            <Link to={"/Github"}>My GitHub</Link>
+          </li>
+        }
       </ul>
     </div>
   );

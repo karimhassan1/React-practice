@@ -87,6 +87,21 @@
   animation-duration: 3s;
   animation-delay: 2s;
 }
+.gitHubLink li {
+  border: 2px solid rgba(128, 128, 128, 0.253);
+  margin-bottom: 10px;
+  border-radius: 10px;
+  margin-left: 10px;
+  font-weight: 600;
+}
+.gitHubLink li a {
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+}
+.gitHubLink li:hover {
+  background-color: rgba(128, 128, 128, 0.453);
+}
 
 @keyframes courousalStart {
   from {
@@ -96,6 +111,7 @@
     margin-left: 0px;
   }
 }
+
 /* ProductListSmallPicCourousla the code is below */
 .h-499-px {
   height: 500px;

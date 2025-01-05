@@ -1,22 +1,25 @@
 import { data } from "autoprefixer";
 import { useEffect, useState } from "react";
+import Shimmer from "../Shimmer/Shimmer.jsx";
+import GitHubBody from "./GitHubBody.jsx";
 
-const dataFetching = async () => {
+const dataFetching = async (setFetchData) => {
   try {
-    response = await fetch("https://api.github.com/users/karimhassan1");
-    data = await response.json();
-    console.log(data);
+    const response1 = await fetch("https://api.github.com/users/karimhassan1");
+    const jsData = await response1.json();
+    setFetchData(jsData);
   } catch (error) {
-    console.log(error);
+    console.log(error.message);
   }
 };
 
 const GitHub = () => {
-  useEffect(() => {}, []);
-  return (
-    <div>
-      <h1>GitHub Data is coming</h1>
-    </div>
-  );
+  const [fetchData, setFetchData] = useState(false);
+  useEffect(() => {
+    dataFetching(setFetchData);
+  }, []);
+  {
+    return fetchData ? <GitHubBody param={fetchData} /> : <Shimmer />;
+  }
 };
 export default GitHub;
