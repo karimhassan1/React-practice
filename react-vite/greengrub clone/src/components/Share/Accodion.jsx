@@ -32,11 +32,7 @@ const AccodionChild = ({ name, des, isVisible, setIsVisible, hide }) => {
 };
 
 const Accodion = () => {
-  const [show, isShow] = useState({
-    home: false,
-    about: false,
-    contact: false,
-  });
+  const [show, isShow] = useState(false);
   return (
     <div className="max-w-[1800px] w-full">
       <AccodionChild
@@ -44,20 +40,12 @@ const Accodion = () => {
         des={
           "Lorem ipsum dolor Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam odit voluptate commodi illo saepe. Nulla distinctio repudiandae obcaecati ipsum fugiat ea. Quia doloribus mollitia obcaecati minus similique inventore adipisci soluta? sit amet consectetur adipisicing elit. Magnam odit voluptate commodi illo saepe. Nulla distinctio repudiandae obcaecati ipsum fugiat ea. Quia doloribus mollitia obcaecati minus similique inventore adipisci soluta?"
         }
-        isVisible={show.home}
+        isVisible={show == "home"}
         setIsVisible={() => {
-          isShow({
-            home: true,
-            about: false,
-            contact: false,
-          });
+          isShow("home");
         }}
         hide={() => {
-          isShow({
-            home: false,
-            about: false,
-            contact: false,
-          });
+          isShow(false);
         }}
       />
       <AccodionChild
@@ -65,20 +53,12 @@ const Accodion = () => {
         des={
           "Lorem ipsum dolor Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam odit voluptate commodi illo saepe. Nulla distinctio repudiandae obcaecati ipsum fugiat ea. Quia doloribus mollitia obcaecati minus similique inventore adipisci soluta? sit amet consectetur adipisicing elit. Magnam odit voluptate commodi illo saepe. Nulla distinctio repudiandae obcaecati ipsum fugiat ea. Quia doloribus mollitia obcaecati minus similique inventore adipisci soluta?"
         }
-        isVisible={show.about}
+        isVisible={show == "about"}
         setIsVisible={() => {
-          isShow({
-            home: false,
-            about: true,
-            contact: false,
-          });
+          isShow("about");
         }}
         hide={() => {
-          isShow({
-            home: false,
-            about: false,
-            contact: false,
-          });
+          isShow(false);
         }}
       />
       <AccodionChild
@@ -86,20 +66,12 @@ const Accodion = () => {
         des={
           "Lorem ipsum dolor Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam odit voluptate commodi illo saepe. Nulla distinctio repudiandae obcaecati ipsum fugiat ea. Quia doloribus mollitia obcaecati minus similique inventore adipisci soluta? sit amet consectetur adipisicing elit. Magnam odit voluptate commodi illo saepe. Nulla distinctio repudiandae obcaecati ipsum fugiat ea. Quia doloribus mollitia obcaecati minus similique inventore adipisci soluta?"
         }
-        isVisible={show.contact}
+        isVisible={show == "contact"}
         setIsVisible={() => {
-          isShow({
-            home: false,
-            about: false,
-            contact: true,
-          });
+          isShow("contact");
         }}
         hide={() => {
-          isShow({
-            home: false,
-            about: false,
-            contact: false,
-          });
+          isShow(false);
         }}
       />
     </div>

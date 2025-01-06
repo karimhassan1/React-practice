@@ -1,8 +1,9 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faAngleDown } from "@fortawesome/free-solid-svg-icons";
+import { faAngleDown, faAngleUp } from "@fortawesome/free-solid-svg-icons";
 import { Link } from "react-router-dom";
+import { useState } from "react";
 const GitHubBody = ({ param }) => {
-  console.log(param);
+  const [isVisible, setIsVisible] = useState(false);
   return (
     <div className="w-full mt-10 max-w-[1400px]">
       <div className="w-5/6 sm:w-3/4 lg:w-1/2 sm:text-2xl p-3 m-auto border lg:p-10 flex flex-col justify-center">
@@ -20,25 +21,45 @@ const GitHubBody = ({ param }) => {
         <h1 className="mt-3">{param.bio}</h1>
         <h1 className="text-xl">Id: {param.id}</h1>
         <h1 className="text-2xl font-bold">
-          My Project Repository <FontAwesomeIcon icon={faAngleDown} size="xl" />
+          My Project Repository{" "}
+          {isVisible ? (
+            <button
+              onClick={() => {
+                setIsVisible(false);
+              }}
+            >
+              {" "}
+              <FontAwesomeIcon icon={faAngleUp} size="" />
+            </button>
+          ) : (
+            <button
+              onClick={() => {
+                setIsVisible(true);
+              }}
+            >
+              <FontAwesomeIcon icon={faAngleDown} size="" />
+            </button>
+          )}
         </h1>
-        <div>
-          <ul className="gitHubLink flex flex-col justify-center items-start ">
-            <li>
-              <Link to="https://github.com/karimhassan1/React-practice/tree/main/react-vite/greengrub%20clone">
-                Green Grub On React Vite
-              </Link>
-            </li>
-            <li>
-              <Link to="https://github.com/karimhassan1/React-practice/tree/main/react-vite/greengrub%20clone">
-                React Practice on parcel
-              </Link>
-            </li>
-            <li>
-              <Link to="#">Php use for Medical Store managment</Link>
-            </li>
-          </ul>
-        </div>
+        {isVisible && (
+          <div className="mt-5">
+            <ul className="gitHubLink flex flex-col justify-center items-start ">
+              <li className="p-3">
+                <Link to="https://github.com/karimhassan1/React-practice/tree/main/react-vite/greengrub%20clone">
+                  Green Grub
+                </Link>
+              </li>
+              <li className="p-3">
+                <Link to="https://github.com/karimhassan1/React-practice/tree/main/react-vite/greengrub%20clone">
+                  React
+                </Link>
+              </li>
+              <li className="p-3">
+                <Link to="#">Store managment</Link>
+              </li>
+            </ul>
+          </div>
+        )}
       </div>
     </div>
   );
