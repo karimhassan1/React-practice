@@ -3,10 +3,10 @@ import ReactDOM from "react-dom/client";
 import "./index.css";
 import { Header, Footer, HomeBodyApp } from "./App";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import { HomePagesPathWithElements } from "./components/constant/HomeData";
-import NotFound from "./components/Share/NotFound";
 const DynamicHome2Body = lazy(() => import("./components/Body/Home2Body"));
 const GitHub = lazy(() => import("./components/Share/GitHub"));
+const Accodion = lazy(() => import("./components/Share/Accodion"));
+const NotFound = lazy(() => import("./components/Share/NotFound"));
 
 const TotalApp = () => {
   return (
@@ -35,7 +35,22 @@ const TotalApp = () => {
               </Suspense>
             }
           />
-          <Route Paht="*" element={<NotFound />} />
+          <Route
+            path="/occodion"
+            element={
+              <Suspense>
+                <Accodion />
+              </Suspense>
+            }
+          />
+          <Route
+            path="*"
+            element={
+              <Suspense fallback={<h1>Loading...</h1>}>
+                <NotFound />
+              </Suspense>
+            }
+          />
         </Routes>
 
         <Footer />

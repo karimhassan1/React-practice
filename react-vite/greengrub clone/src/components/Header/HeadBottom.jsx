@@ -22,7 +22,7 @@ const NavItem = ({ navItemText, data1, dropDownOrMega }) => {
         isShow(false);
       }}
     >
-      <Link to={"/"}>
+      <Link to={"/"} className="border-b-2 ps-2 be-2">
         {navItemText} <FontAwesomeIcon icon={faAngleDown} />
       </Link>
 
@@ -39,7 +39,7 @@ const NavItem = ({ navItemText, data1, dropDownOrMega }) => {
 const HeadBottom = () => {
   return (
     <div className="border-b-4 h-16 font-bold text-1xl hidden lg:block text-fo relative">
-      <ul className="flex items-center justify-around h-full w-2/5 m-auto">
+      <ul className="flex items-center justify-around h-full w-3/5 m-auto">
         <NavItem
           navItemText={"Home"}
           data1={HomeDropDownData}
@@ -57,11 +57,17 @@ const HeadBottom = () => {
           data1={pagesDropDownData}
           dropDownOrMega={true}
         />
-        {
-          <li>
-            <Link to={"/Github"}>My GitHub</Link>
-          </li>
-        }
+
+        <li className="me-3">
+          <Link to={"/Github"} className="border-b-2 ps-2 be-2">
+            My GitHub
+          </Link>
+        </li>
+        <li>
+          <Link to={"/occodion"} className="border-b-2 ps-2 be-2">
+            Occodion
+          </Link>
+        </li>
       </ul>
     </div>
   );
