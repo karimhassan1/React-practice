@@ -14,7 +14,7 @@ const NavItem = ({ navItemText, data1, dropDownOrMega }) => {
   const [show, isShow] = useState(false);
   return (
     <li
-      className=""
+      className="border-b-2 p-3"
       onMouseEnter={() => {
         isShow(true);
       }}
@@ -22,7 +22,7 @@ const NavItem = ({ navItemText, data1, dropDownOrMega }) => {
         isShow(false);
       }}
     >
-      <Link to={"/"} className="border-b-2 ps-2 be-2">
+      <Link to={"/"} className="lg:border-b-2 lg:ps-2 lg:be-2">
         {navItemText} <FontAwesomeIcon icon={faAngleDown} />
       </Link>
 
@@ -38,8 +38,11 @@ const NavItem = ({ navItemText, data1, dropDownOrMega }) => {
 };
 const HeadBottom = () => {
   return (
-    <div className="border-b-4 h-16 font-bold text-1xl hidden lg:block text-fo relative">
-      <ul className="flex items-center justify-around h-full w-3/5 m-auto">
+    <div
+      id="mobile-nav"
+      className="border-b-4 bg-white lg:h-16 font-bold text-1xl hidden lg:block absolute top-0 left-0 w-60  lg:w-full h-full lg:relative"
+    >
+      <ul className="flex flex-col lg:flex-row lg:items-center justify-around lg:h-full lg:w-3/5 lg:m-auto">
         <NavItem
           navItemText={"Home"}
           data1={HomeDropDownData}
@@ -58,18 +61,18 @@ const HeadBottom = () => {
           dropDownOrMega={true}
         />
 
-        <li className="me-3">
-          <Link to={"/Github"} className="border-b-2 ps-2 be-2">
+        <li className="me-3 border-b-2 p-3">
+          <Link to={"/Github"} className="lg:border-b-2 lg:ps-2 lg:be-2">
             My GitHub
           </Link>
         </li>
-        <li>
-          <Link to={"/occodion"} className="border-b-2 ps-2 be-2">
+        <li className="border-b-2 p-3">
+          <Link to={"/occodion"} className="lg:border-b-2 lg:ps-2 lg:be-2">
             Occodion
           </Link>
         </li>
-        <li>
-          <Link to={"/context"} className="border-b-2 ps-2 be-2">
+        <li className="border-b-2 p-3">
+          <Link to={"/context"} className="lg:border-b-2 lg:ps-2 lg:be-2">
             Context
           </Link>
         </li>

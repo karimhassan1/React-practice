@@ -4,13 +4,13 @@ import {
   faCartShopping,
   faMagnifyingGlass,
   faBars,
+  faHandMiddleFinger,
 } from "@fortawesome/free-solid-svg-icons";
 import { useState, useContext } from "react";
 import userContext from "../Share/userContext";
 const HeadMiddle = () => {
   const [orderCount, setOrderCount] = useState(5);
   const [searchInput, setSearchInput] = useState("");
-  const { user } = useContext(userContext);
   return (
     <div className="border h-24 flex justify-around items-center">
       <div className="lg:w-1/4 p-4 rounded">
@@ -28,7 +28,15 @@ const HeadMiddle = () => {
           <FontAwesomeIcon icon={faMagnifyingGlass} size="xl" />
         </button>
         <div className="lg:hidden">
-          <FontAwesomeIcon icon={faBars} size="xl" />
+          <button
+            className="cursor border p-2"
+            onClick={() => {
+              console.log(document.getElementById("mobile-nav"));
+              document.getElementById("mobile-nav").classList.toggle("hidden");
+            }}
+          >
+            <FontAwesomeIcon icon={faBars} size="xl" />{" "}
+          </button>
         </div>
       </div>
       <div className="w-1/2 flex justify-center">
@@ -37,8 +45,6 @@ const HeadMiddle = () => {
           alt="Logo"
         />
       </div>
-      {<span>{user.name}</span>}
-      {<span>{user.email}</span>}
       <div className=" lg:w-1/5 flex justify-center items-center">
         <div className="me-10 text-3xl hidden lg:block">
           <FontAwesomeIcon icon={faUser} />
