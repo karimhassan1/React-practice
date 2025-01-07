@@ -68,6 +68,11 @@ const HeadBottom = () => {
             Occodion
           </Link>
         </li>
+        <li>
+          <Link to={"/context"} className="border-b-2 ps-2 be-2">
+            Context
+          </Link>
+        </li>
       </ul>
     </div>
   );

@@ -5,10 +5,12 @@ import {
   faMagnifyingGlass,
   faBars,
 } from "@fortawesome/free-solid-svg-icons";
-import { useState } from "react";
+import { useState, useContext } from "react";
+import userContext from "../Share/userContext";
 const HeadMiddle = () => {
   const [orderCount, setOrderCount] = useState(5);
   const [searchInput, setSearchInput] = useState("");
+  const { user } = useContext(userContext);
   return (
     <div className="border h-24 flex justify-around items-center">
       <div className="lg:w-1/4 p-4 rounded">
@@ -35,6 +37,8 @@ const HeadMiddle = () => {
           alt="Logo"
         />
       </div>
+      {<span>{user.name}</span>}
+      {<span>{user.email}</span>}
       <div className=" lg:w-1/5 flex justify-center items-center">
         <div className="me-10 text-3xl hidden lg:block">
           <FontAwesomeIcon icon={faUser} />

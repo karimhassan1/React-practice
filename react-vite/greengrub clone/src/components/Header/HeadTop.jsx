@@ -1,11 +1,12 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { useState } from "react";
+import { useState, useContext } from "react";
 import {
   faAngleRight,
   faAngleLeft,
   faAngleDown,
   faHandPointRight,
 } from "@fortawesome/free-solid-svg-icons";
+import userContext from "../Share/userContext";
 
 let TitleArr = [
   "Get $50 Gift card on a purchase of $ 1000",
@@ -15,6 +16,7 @@ let TitleArr = [
 const HeadTop = () => {
   let [headCountArr, setHeadCountArr] = useState(0);
   let [headCountNum, setHeadCountNum] = useState(3000);
+  const { user } = useContext(userContext);
   return (
     <>
       <div className="w-full bg-primary h-12 flex justify-center items-center text-white">
